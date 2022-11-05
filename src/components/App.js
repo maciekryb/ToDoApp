@@ -50,11 +50,31 @@ class App extends Component {
   };
 
   deleteTask = (id) => {
-    console.log('delete elementu o id ' + id);
+    // console.log('delete elementu o id ' + id);
+    // const tasks = [...this.state.tasks];
+    // const index = tasks.findIndex((task) => task.id === id);
+    // tasks.splice(index, 1);
+    // this.setState({
+    //   tasks,
+    // });
+
+    let tasks = [...this.state.tasks];
+    tasks = tasks.filter((task) => task.id !== id);
+    this.setState({
+      tasks,
+    });
   };
 
   changeTaskStatus = (id) => {
     console.log('zmiana w elemencie o id ' + id);
+    const tasks = Array.from(this.state.tasks);
+    tasks.forEach((task) => {
+      if (task.id === id) {
+        task.active = false;
+        task.finishDate = new Date().getTime();
+      }
+    });
+    this.setState({ tasks });
   };
 
   render() {
