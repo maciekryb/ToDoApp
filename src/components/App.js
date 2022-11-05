@@ -19,7 +19,7 @@ class App extends Component {
         text: 'Fryzjer',
         date: '2018-02-15',
         important: true,
-        active: true,
+        active: false,
         finishDate: null,
       },
       {
@@ -27,7 +27,7 @@ class App extends Component {
         text: 'Basen',
         date: '2018-02-15',
         important: true,
-        active: true,
+        active: false,
         finishDate: null,
       },
       {
