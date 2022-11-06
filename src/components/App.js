@@ -10,7 +10,7 @@ class App extends Component {
         id: 0,
         text: 'Zagrac wreszcie w Wiedzmina 3',
         date: '2018-02-15',
-        important: true,
+        important: false,
         active: true,
         finishDate: null,
       },
@@ -19,7 +19,7 @@ class App extends Component {
         text: 'Fryzjer',
         date: '2018-02-15',
         important: true,
-        active: false,
+        active: true,
         finishDate: null,
       },
       {
@@ -27,7 +27,7 @@ class App extends Component {
         text: 'Basen',
         date: '2018-02-15',
         important: true,
-        active: false,
+        active: true,
         finishDate: null,
       },
       {
